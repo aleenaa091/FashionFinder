@@ -13,8 +13,8 @@ struct Home: View {
             Image("homebackground")
                 .resizable()
                 .ignoresSafeArea()
-                
-                
+            
+            
             VStack {
                 Spacer()
                 Image("logo")
@@ -25,32 +25,32 @@ struct Home: View {
                     .font(.title)
                     .fontWeight(.bold)
                 Text("let's find your fashion!")
-                Button("ready to start?") {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                NavigationStack {
+                    Text("Home")
+                    NavigationLink(destination: Text("Quiz!")) {
+                        Text("ready to start?")
+                        Spacer()
+                        HStack {
+                            Button("Home"){
+                                
+                            }
+                            Button("Shop"){
+                                
+                            }
+                            Button("Learn"){
+                                
+                            }
+                        }
+                    }
                 }
-                .buttonStyle(.borderedProminent)
-                .tint(/*@START_MENU_TOKEN@*/.accentColor/*@END_MENU_TOKEN@*/)
-                .accentColor(/*@START_MENU_TOKEN@*/Color(red: 0.137, green: 0.088, blue: 0.678)/*@END_MENU_TOKEN@*/)
-                Spacer()
-                HStack {
-                    Button("Home"){
-                        
-                    }
-                    Button("Shop"){
-                        
-                    }
-                    Button("Learn"){
-                        
-                    }
-                }
+                
             }
         }
-        
-    }
-}
-
-struct Home_Previews: PreviewProvider {
-    static var previews: some View {
-        Home()
+       
+        struct Home_Previews: PreviewProvider {
+            static var previews: some View {
+                Home()
+            }
+        }
     }
 }
