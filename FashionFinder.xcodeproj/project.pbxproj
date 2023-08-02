@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		7A0198472A7AF944008FC664 /* FashionFinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0198462A7AF944008FC664 /* FashionFinderApp.swift */; };
-		7A0198492A7AF944008FC664 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0198482A7AF944008FC664 /* ContentView.swift */; };
 		7A01984B2A7AF946008FC664 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A01984A2A7AF946008FC664 /* Assets.xcassets */; };
 		7A01984E2A7AF946008FC664 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A01984D2A7AF946008FC664 /* Preview Assets.xcassets */; };
+		7A0198552A7AFB74008FC664 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0198542A7AFB74008FC664 /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7A0198432A7AF944008FC664 /* FashionFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FashionFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A0198462A7AF944008FC664 /* FashionFinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FashionFinderApp.swift; sourceTree = "<group>"; };
-		7A0198482A7AF944008FC664 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7A01984A2A7AF946008FC664 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A01984D2A7AF946008FC664 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7A0198542A7AFB74008FC664 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				7A0198462A7AF944008FC664 /* FashionFinderApp.swift */,
-				7A0198482A7AF944008FC664 /* ContentView.swift */,
+				7A0198542A7AFB74008FC664 /* Home.swift */,
 				7A01984A2A7AF946008FC664 /* Assets.xcassets */,
 				7A01984C2A7AF946008FC664 /* Preview Content */,
 			);
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A0198492A7AF944008FC664 /* ContentView.swift in Sources */,
+				7A0198552A7AFB74008FC664 /* Home.swift in Sources */,
 				7A0198472A7AF944008FC664 /* FashionFinderApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
