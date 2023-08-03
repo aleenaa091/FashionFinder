@@ -12,7 +12,7 @@ struct Home: View {
 
         NavigationStack {
             ZStack {
-                Image("homebackground")
+                Image("home")
                     .resizable()
                     .ignoresSafeArea()
                 
@@ -39,7 +39,7 @@ struct Home: View {
                     Spacer()
                     
                     HStack(spacing: 70.0) {
-                    
+                        
                         Button("🏠") {
                         }
                         .font(.largeTitle)

@@ -20,12 +20,12 @@ struct Shop: View {
                         .font(.largeTitle)
                     Text("Here are places you can shop sustainably from:")
                     HStack {
-                        Text("Link 1")
-                        Text("Link 2")
-                        Text("Link 3")
-                        Text("Link 4")
-                        Text("Link 5")
-                        Text("Link 6")
+                        Text("Store 1 Image")
+                        Text("Store 2 Image")
+                        Text("Store 3 Image")
+                        Text("Store 4 Image")
+                        Text("Store 5 Image")
+                        Text("Store 6 Image")
                     }
                     
                     
