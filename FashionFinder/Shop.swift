@@ -1,5 +1,5 @@
 //
-//  Home.swift
+//  Shop.swift
 //  FashionFinder
 //
 //  Created by Aleena Abraham on 8/2/23.
@@ -7,40 +7,39 @@
 
 import SwiftUI
 
-struct Home: View {
+struct Shop: View {
     var body: some View {
-
         NavigationStack {
-            ZStack {
-                Image("homebackground")
-                    .resizable()
+            ZStack{
+                Image("shop")
+                    .resizable(resizingMode: .stretch)
+                    .aspectRatio(contentMode: .fill)
                     .ignoresSafeArea()
-                
                 VStack {
-                    Spacer()
-                    Image("logo")
-                        .resizable()
-                        .frame(width: 270.0, height: 270.0)
-                        .cornerRadius(/*@START_MENU_TOKEN@*/50.0/*@END_MENU_TOKEN@*/)
-                    Text("FashionFinder")
-                        .font(.title)
-                        .fontWeight(.bold)
-                    Text("let's find your fashion!")
-                    
-                
-                    NavigationLink(destination: Quiz__1()){
-                        Text("ready to start?")
+                    Text("Shop")
+                        .font(.largeTitle)
+                    Text("Here are places you can shop sustainably from:")
+                    HStack {
+                        Text("Link 1")
+                        Text("Link 2")
+                        Text("Link 3")
+                        Text("Link 4")
+                        Text("Link 5")
+                        Text("Link 6")
                     }
-                    .buttonStyle(.borderedProminent)
-                    .tint(/*@START_MENU_TOKEN@*/.accentColor/*@END_MENU_TOKEN@*/)
-                    .accentColor(/*@START_MENU_TOKEN@*/Color(red: 0.137, green: 0.088, blue: 0.678)/*@END_MENU_TOKEN@*/)
-                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                     
-                    Spacer()
                     
                     HStack(spacing: 70.0) {
+                        NavigationLink(destination: Home()) {
+                            Text ("🏠")
+                                .font(.largeTitle)
+                        }
+                        .buttonStyle(.borderedProminent)
+                        .cornerRadius(/*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/)
+                        .tint(/*@START_MENU_TOKEN@*/.accentColor/*@END_MENU_TOKEN@*/)
+                        .accentColor(/*@START_MENU_TOKEN@*/Color(red: 0.895, green: 0.975, blue: 0.999)/*@END_MENU_TOKEN@*/)
                     
-                        Button("🏠") {
+                        Button("🛒") {
                         }
                         .font(.largeTitle)
                         .foregroundColor(Color.black)
@@ -50,14 +49,7 @@ struct Home: View {
                         .tint(/*@START_MENU_TOKEN@*/.accentColor/*@END_MENU_TOKEN@*/)
                         .accentColor(/*@START_MENU_TOKEN@*/Color(red: 0.895, green: 0.975, blue: 0.999)/*@END_MENU_TOKEN@*/)
                         
-                        NavigationLink(destination: Shop()) {
-                            Text ("🛒")
-                                .font(.largeTitle)
-                        }
-                        .buttonStyle(.borderedProminent)
-                        .cornerRadius(/*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/)
-                        .tint(/*@START_MENU_TOKEN@*/.accentColor/*@END_MENU_TOKEN@*/)
-                        .accentColor(/*@START_MENU_TOKEN@*/Color(red: 0.895, green: 0.975, blue: 0.999)/*@END_MENU_TOKEN@*/)
+                        
                         
                         NavigationLink(destination: Learn()) {
                             Text("📖")
@@ -70,18 +62,14 @@ struct Home: View {
 
                         
                     }
-                    
                 }
             }
         }
-        }
-    }
-
-struct Home_Previews: PreviewProvider {
-    static var previews: some View {
-        Home()
     }
 }
 
-
-                               
+struct Shop_Previews: PreviewProvider {
+    static var previews: some View {
+        Shop()
+    }
+}

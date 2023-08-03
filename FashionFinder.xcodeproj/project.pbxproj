@@ -11,6 +11,9 @@
 		7A01984B2A7AF946008FC664 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A01984A2A7AF946008FC664 /* Assets.xcassets */; };
 		7A01984E2A7AF946008FC664 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A01984D2A7AF946008FC664 /* Preview Assets.xcassets */; };
 		7A0198552A7AFB74008FC664 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0198542A7AFB74008FC664 /* Home.swift */; };
+		7A229F5E2A7B388800C76B27 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A229F5D2A7B388800C76B27 /* Shop.swift */; };
+		7A229F602A7B389C00C76B27 /* Learn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A229F5F2A7B389C00C76B27 /* Learn.swift */; };
+		7A2D03962A7B187E00B3A7C0 /* Quiz #1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2D03952A7B187E00B3A7C0 /* Quiz #1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		7A01984A2A7AF946008FC664 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A01984D2A7AF946008FC664 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7A0198542A7AFB74008FC664 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		7A229F5D2A7B388800C76B27 /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
+		7A229F5F2A7B389C00C76B27 /* Learn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Learn.swift; sourceTree = "<group>"; };
+		7A2D03952A7B187E00B3A7C0 /* Quiz #1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Quiz #1.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,9 @@
 			children = (
 				7A0198462A7AF944008FC664 /* FashionFinderApp.swift */,
 				7A0198542A7AFB74008FC664 /* Home.swift */,
+				7A229F5D2A7B388800C76B27 /* Shop.swift */,
+				7A229F5F2A7B389C00C76B27 /* Learn.swift */,
+				7A2D03952A7B187E00B3A7C0 /* Quiz #1.swift */,
 				7A01984A2A7AF946008FC664 /* Assets.xcassets */,
 				7A01984C2A7AF946008FC664 /* Preview Content */,
 			);
@@ -138,7 +147,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A0198552A7AFB74008FC664 /* Home.swift in Sources */,
+				7A229F602A7B389C00C76B27 /* Learn.swift in Sources */,
 				7A0198472A7AF944008FC664 /* FashionFinderApp.swift in Sources */,
+				7A2D03962A7B187E00B3A7C0 /* Quiz #1.swift in Sources */,
+				7A229F5E2A7B388800C76B27 /* Shop.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
