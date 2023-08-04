@@ -49,7 +49,7 @@ struct Results: View {
     func styleChoice (officialLet : Int) -> String {
         var styleChoice = " "
         if officialLet == 0 {
-            styleChoice = "Basic"
+            styleChoice = "Casual Chic / Basic"
         } else if officialLet == 1 {
             styleChoice = "Street"
         } else if officialLet == 2 {
@@ -67,10 +67,54 @@ struct Results: View {
                     .ignoresSafeArea()
                 
                 VStack {
-                    Text("Your style should be \(styleChoice(officialLet : tally(answerChoices: answerChoices)))")
-                    
+                    Text("The style that matches you the most:")
+                        .font(.largeTitle)
+                        .multilineTextAlignment(.center)
+                    Text(" ")
+                    Button("\(styleChoice(officialLet : tally(answerChoices: answerChoices)))"){
+                        
+                    }
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .multilineTextAlignment(.center)
+                        .buttonStyle(.bordered)
+                        .foregroundColor(/*@START_MENU_TOKEN@*/Color(red: 0.819, green: 0.482, blue: 0.442)/*@END_MENU_TOKEN@*/)
+                    Text(" ")
+                    Text("Congratulations on completing the quiz!")
+                        .fontWeight(.bold)
+                   
+                    HStack{
+                        NavigationLink(destination: Home()) {
+                            Text ("🏠")
+                                .font(.largeTitle)
+                        }
+                        .buttonStyle(.borderedProminent)
+                        .cornerRadius(/*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/)
+                        .tint(/*@START_MENU_TOKEN@*/.accentColor/*@END_MENU_TOKEN@*/)
+                        .accentColor(/*@START_MENU_TOKEN@*/Color(red: 0.895, green: 0.975, blue: 0.999)/*@END_MENU_TOKEN@*/)
+                        
+                        NavigationLink(destination: Shop()) {
+                            Text ("🛒")
+                                .font(.largeTitle)
+                        }
+                        .buttonStyle(.borderedProminent)
+                        .cornerRadius(/*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/)
+                        .tint(/*@START_MENU_TOKEN@*/.accentColor/*@END_MENU_TOKEN@*/)
+                        .accentColor(/*@START_MENU_TOKEN@*/Color(red: 0.895, green: 0.975, blue: 0.999)/*@END_MENU_TOKEN@*/)
+                        
+                        NavigationLink(destination: Learn()) {
+                            Text("📖")
+                                .font(.largeTitle)
+                        }
+                        .buttonStyle(.borderedProminent)
+                        .cornerRadius(/*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/)
+                        .tint(/*@START_MENU_TOKEN@*/.accentColor/*@END_MENU_TOKEN@*/)
+                        .accentColor(/*@START_MENU_TOKEN@*/Color(red: 0.895, green: 0.975, blue: 0.999)/*@END_MENU_TOKEN@*/)
+                    }
+                        
                 } // vstack
-                
+                .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             } // ztack
         } // nav stack
     }

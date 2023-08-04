@@ -15,19 +15,51 @@ struct Shop: View {
                     .resizable(resizingMode: .stretch)
                     .aspectRatio(contentMode: .fill)
                     .ignoresSafeArea()
-                VStack {
+                VStack(spacing: 10.0) {
+                    Text(" ")
+                        .font(.largeTitle)
+                    Text(" ")
+                        .font(.largeTitle)
                     Text("Shop")
                         .font(.largeTitle)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color(red: 0.188, green: 0.164, blue: 0.501))
+                
                     Text("Here are places you can shop sustainably from:")
-                    HStack {
-                        Text("Store 1 Image")
-                        Text("Store 2 Image")
-                        Text("Store 3 Image")
-                        Text("Store 4 Image")
-                        Text("Store 5 Image")
-                        Text("Store 6 Image")
-                    }
+                        .font(.title)
+                        .foregroundColor(Color(red: 0.078, green: 0.078, blue: 0.078))
+                        .multilineTextAlignment(.center)
+                        .lineLimit(nil)
+                    VStack{
+                        HStack {
+                            Image("brand1")
+                                .resizable(resizingMode: .stretch)
+                                .frame(width: 170.0, height: 170.0)
+                                .cornerRadius(/*@START_MENU_TOKEN@*/200.0/*@END_MENU_TOKEN@*/)
+                            Image("brand 2")
+                                .resizable(resizingMode: .stretch)
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 150.0, height: 150.0)
+                                .cornerRadius(/*@START_MENU_TOKEN@*/200.0/*@END_MENU_TOKEN@*/)
+                        }
+                        HStack {
+                            Image("brand5")
+                                .resizable(resizingMode: .stretch)
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 170.0, height: 170.0)
+                                .cornerRadius(/*@START_MENU_TOKEN@*/200.0/*@END_MENU_TOKEN@*/)
+                            Image("brand4")
+                                .resizable(resizingMode: .stretch)
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 150.0, height: 150.0)
+                                .cornerRadius(/*@START_MENU_TOKEN@*/200.0/*@END_MENU_TOKEN@*/)
+                        }
+                        }
                     
+                    Text(" ")
+                    Text(" ")
+                    Text(" ")
+                    Text(" ")
                     
                     HStack(spacing: 70.0) {
                         NavigationLink(destination: Home()) {
@@ -35,7 +67,7 @@ struct Shop: View {
                                 .font(.largeTitle)
                         }
                         .buttonStyle(.borderedProminent)
-                        .cornerRadius(/*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/)
+                        .cornerRadius(100.0)
                         .tint(/*@START_MENU_TOKEN@*/.accentColor/*@END_MENU_TOKEN@*/)
                         .accentColor(/*@START_MENU_TOKEN@*/Color(red: 0.895, green: 0.975, blue: 0.999)/*@END_MENU_TOKEN@*/)
                     
@@ -62,11 +94,17 @@ struct Shop: View {
 
                         
                     }
+                    }
+                .padding(.all)
+                .padding(.all)
+                    
+                    
+                    
                 }
             }
         }
     }
-}
+
 
 struct Shop_Previews: PreviewProvider {
     static var previews: some View {
